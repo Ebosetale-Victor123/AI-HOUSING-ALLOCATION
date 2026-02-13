@@ -1,0 +1,14 @@
+{
+  "version": "v1.0.0",
+  "created_at": "2026-02-12T21:42:24.598251",
+  "model_type": "RandomForestRegressor",
+  "n_estimators": 100,
+  "max_depth": 10,
+  "feature_names": [
+    "gpa_normalized",
+    "level_encoded",
+    "distance_transformed",
+    "disability_flag",
+    "financial_aid_flag"
+  ]
+}

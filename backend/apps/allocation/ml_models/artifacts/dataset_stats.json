@@ -1,0 +1,25 @@
+{
+  "n_samples": 10000,
+  "allocated_count": 9860,
+  "allocation_rate": 0.986,
+  "priority_score_mean": 92.02237,
+  "priority_score_std": 10.111444513723814,
+  "feature_columns": [
+    "level",
+    "gpa",
+    "distance_km",
+    "disability",
+    "medical_condition",
+    "financial_need",
+    "first_generation",
+    "international",
+    "gender",
+    "previous_housing",
+    "semesters_completed",
+    "academic_probation",
+    "family_size",
+    "family_income_bracket",
+    "employment_hours"
+  ],
+  "generated_at": "2026-02-12T22:26:22.070706"
+}

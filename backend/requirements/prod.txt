@@ -1,0 +1,20 @@
+-r base.txt
+
+# Production Server
+gunicorn>=21.2.0,<21.3
+uvicorn>=0.25.0,<0.26
+
+# Monitoring & Logging
+sentry-sdk>=1.39.0,<1.40
+structlog>=23.2.0,<23.3
+
+# Security
+django-csp>=3.7,<3.8
+django-ratelimit>=4.1.0,<4.2
+
+# Static Files
+whitenoise>=6.6.0,<6.7
+boto3>=1.34.0,<1.35  # For AWS S3 (optional)
+
+# SSL
+certifi>=2023.11.0

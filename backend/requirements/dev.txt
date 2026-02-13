@@ -1,0 +1,25 @@
+-r base.txt
+
+# Testing
+pytest>=7.4.0,<7.5
+pytest-django>=4.7.0,<4.8
+pytest-cov>=4.1.0,<4.2
+factory-boy>=3.3.0,<3.4
+faker>=20.1.0,<20.2
+
+# Code Quality
+flake8>=6.1.0,<6.2
+black>=23.12.0,<23.13
+isort>=5.13.0,<5.14
+
+# Debugging
+django-debug-toolbar>=4.2.0,<4.3
+ipdb>=0.13.0,<0.14
+
+# Jupyter (for ML experiments)
+jupyter>=1.0.0,<1.1
+matplotlib>=3.8.0,<3.9
+seaborn>=0.13.0,<0.14
+
+# Load Testing
+locust>=2.20.0,<2.21
