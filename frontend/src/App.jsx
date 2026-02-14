@@ -7,6 +7,7 @@ import LiveOccupancy from './components/landing/LiveOccupancy';
 import Testimonials from './components/landing/Testimonials';
 import Footer from './components/landing/Footer';
 import StudentDashboard from './pages/StudentDashboard';
+import AdminDashboard from './pages/AdminDashboard';
 import Auth from './pages/Auth'; // Import the Auth page
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           {/* Authentication Page */}
           <Route path="/auth" element={<Auth />} />
           <Route path="/student-dashboard" element={<StudentDashboard />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
         </Routes>
       </div>
     </Router>
