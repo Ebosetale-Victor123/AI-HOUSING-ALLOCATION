@@ -1,22 +1,23 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// We use ./ instead of @ to be 100% safe for now
 import Navbar from './components/landing/Navbar';
 import HeroSection from './components/landing/HeroSection';
 import HowItWorks from './components/landing/HowItWorks';
 import LiveOccupancy from './components/landing/LiveOccupancy';
 import Testimonials from './components/landing/Testimonials';
 import Footer from './components/landing/Footer';
+import StudentDashboard from './pages/StudentDashboard';
+import Auth from './pages/Auth'; // Import the Auth page
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen relative bg-white">
-        <Navbar />
+      <div className="min-h-screen relative">
         <Routes>
+          {/* Main Landing Page */}
           <Route path="/" element={
             <>
+              <Navbar />
               <HeroSection />
               <HowItWorks />
               <LiveOccupancy />
@@ -24,6 +25,10 @@ function App() {
               <Footer />
             </>
           } />
+
+          {/* Authentication Page */}
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/student-dashboard" element={<StudentDashboard />} />
         </Routes>
       </div>
     </Router>
