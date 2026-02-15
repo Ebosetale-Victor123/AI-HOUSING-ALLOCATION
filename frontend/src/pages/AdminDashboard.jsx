@@ -9,6 +9,7 @@ import AIAllocationEngine from '../components/admin/AIAllocationEngine';
 import ApplicationsTable from '../components/admin/ApplicationsTable';
 import AnalyticsChart from '../components/admin/AnalyticsChart';
 
+
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('dashboard');
 
@@ -74,6 +75,7 @@ export default function AdminDashboard() {
               </motion.div>
             )}
 
+
             {activeTab === 'analytics' && (
   <motion.div 
     key="analytics"
@@ -88,6 +90,7 @@ export default function AdminDashboard() {
     <AnalyticsBottomGrid />
   </motion.div>
 )}
+
 
             {/* 3. AI ALLOCATION VIEW (Centered Layout) */}
             {activeTab === 'allocation' && (
